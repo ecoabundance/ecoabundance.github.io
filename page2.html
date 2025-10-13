@@ -2,21 +2,32 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Lab 3: Embedding External Content Using iFrames</title>
-<link href="css/lab3.css" rel="stylesheet" type="text/css">
+<title>index.html</title>
+	<link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-	<h1> Adding External Content using iFrames </h1>
-	<a href="index.html">  Youtube: Cat Body Language </a>
-	<a href="page2.html"> Quizlet: Cat Body Language </a>
-	<a href="page3.html"> Phet: Natural Selection Game </a>
-	<a href="page4.html"> Survey: Cat Guardianship </a>
+	<div id="wrapper">
+<h1> What Should You Look For?</h1>
+			<a href="index.html">  What Should You Listen For? </a>
+	<a href="page2.html"> What Should You Look For?</a>	
+		<table border="1">
+<tr>
+<td>
+	<video  controls  width="300" height="200">
+<source src="video/catbeingpetted.mp4" type="video/mp4" />
+       <track id="entrack" label="English subtitles" kind="captions" src="video/captions.vtt" srclang="en" default>
+HTML5 Video not supported
+</video>
+		</td>
+	<td>
+		<video  controls  width="300" height="200">
+		<source src="video/scaredcatvideo.mp4" type="video/mp4" />
+			</video>
+	</td>
+	</tr>
+			</table>
+		</div>
+		</body>
+		
 	
-	<br><br>
-	<h2> Quizlet: Cat Body Language</h2>
-	<!-- iFrame code will be added below -->
-
-<iframe src="https://quizlet.com/937268564/match/embed?i=6sh2hu&x=1jj1" height="500" width="100%" style="border:0"></iframe>
-</body>
 </html>
