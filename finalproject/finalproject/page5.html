@@ -24,22 +24,38 @@
 <h2 onclick="rightAnswer()" class="choices"> Tail is Up, Ears are Forward </h2>
 <h2 onclick="wrongAnswer2()" class="choices"> Ears are Back </h2>
 
-<div id="feedback"></div>
+		<div id="feedback"></div>
 <img id="handreaching" src="img/handreaching.png" />
     </div>
 	<script>
-      function rightAnswer(){
-         $("#feedback").html("<h2 style='color:green'> Correct! The cat will display open body language with tail up, ears forward, fur down, and whiskers forward.</h2>");
-         $("#handreaching").show();
-      }
+		function showAnswer() {
+	   $("#").hide();
+	   $("#handreaching").show();
+	   $("#answer").html("<h2></h2>");
+	}
+
+function hideAnswer() {
+	   $("#scaredcat").show();
+	   $("#handreaching").hide();
+	   $("#answer").html("");  
+	}
 		function wrongAnswer1(){
       $("#feedback").html("<h2 style='color:red'> Do not pet if you see this body language. </h2>");
       $("#handreaching").hide();
    }
-   function wrongAnswer2(){
+       function wrongAnswer2(){
       $("#feedback").html("<h2 style='color:red'> Do not pet if you see this body language. </h2>");
-      $("#koala_eating").hide();
+      $("#handreaching").hide();
    }
+		function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! The cat will display open body language with tail up, ears forward, fur down, and whiskers forward.</h2>");
+         $("#handreaching").show();
+      }
+       function wrongAnswer3(){
+      $("#feedback").html("<h2 style='color:red'> Do not pet if you see this body language. </h2>");
+      $("#handreaching").hide();
+   }
+  
 
    </script>
 
