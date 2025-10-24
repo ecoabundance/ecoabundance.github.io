@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index.html</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+<h1> Knowledge Check #1 </h1>
+			<a href="index.html"> Home  </a>
+	<a href="page2.html"> Petting Primer </a>
+		<a href="page3.html"> Observe </a>
+		<a href="page4.html"> Listen </a>
+		<a href="page5.html"> Knowledge Check #1</a>
+		<a href="page6.html"> Knowledge Check #2 </a>
+		<br><br>
+	<h1> What Body Language Shows That a Cat Wants to Be Petted?</h1>
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer1()" class="choices"> Fur is Raised </h2>
+<h2  onclick="wrongAnswer2()" class="choices"> Tail is Wrapped Around Body </h2>
+<h2 onclick="rightAnswer()" class="choices"> Tail is Up, Ears are Forward </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Ears are Back </h2>
+
+<div id="feedback"></div>
+<img id="handreaching" src="img/handreaching.png" />
+    </div>
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! The cat will display open body language with tail up, ears forward, fur down, and whiskers forward.</h2>");
+         $("#handreaching").show();
+      }
+		function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> Do not pet if you see this body language. </h2>");
+      $("#handreaching").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> Do not pet if you see this body language. </h2>");
+      $("#koala_eating").hide();
+   }
+
+   </script>
+
+</body>
+</html>
