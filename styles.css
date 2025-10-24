@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-color:#67B0D5;   /* background color */ 
+	color: #444;          /* text color for the entire document */
+	font-size: 15px;
+	font-family:Rubik, Merriweather, Lato;
+	text-align: center;
+	padding: 15px;
+margin: 3px;
+}
+.stepContent{ 
+	padding-left: 20px; padding-right: 20px;
+flex-wrap: wrap;
+	justify-content: center;
+}
+
+a:hover {
+	font-size:200%;
+	background-color: black; 
+	color: palevioletred; 
+}
+#wrapper {
+	width:900px; height:800px;
+	margin:0 auto;         /* centers wrapper */
+ 	text-align:center;
+	background-color: rgba(255, 255, 255, 0.8);  /* creates white background with 80% opacity */
+}
+ #scaredcat {
+border: black 5px solid;width:300px;height:300px;align-content: center;
+}
+ #scaredcatdiagram {
+display: none; /* hides content */
+border: black 5px solid;width:300px;height:300px;
+}
+td {
+	background-color: rgba(255, 255, 255, 0.8); }
+
+a {align-content: center; word-wrap: break-word; color:#050505;
+	font-size: 14px;
+	background-color:#D3B90B;       margin: 0;
+      padding: 12px;
+      display: inline-flex; /* Align items horizontally */
+      justify-content: center; font-weight: bold;list-style: none;text-decoration: none;}
+.choices {
+cursor: pointer;
+}
+table {
+	margin:0 auto;  /* centers table*/
+}
+
+td {
+	background-color: white;  /* sets background color for table cells*/
+}
+#handreaching {border: black 5px solid;width:300px;height:300px;align-content: center;display:none;
+}/*hides content*}
